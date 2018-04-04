@@ -10,6 +10,17 @@
     </dependencies>
     <scenes>
         <!--Interface Controller-->
+        <scene sceneID="l9A-yG-uJU">
+            <objects>
+                <controller id="xbB-CR-5Ji">
+                    <items>
+                        <label alignment="left" text="Hallo clown :D" id="NgO-U7-epv"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="218" y="-13"/>
+        </scene>
+        <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchDemo_WatchKit_App" customModuleProvider="target">
@@ -18,6 +29,11 @@
                         <button width="1" alignment="left" title="Menu" id="SfF-2q-CsV"/>
                         <button width="1" alignment="left" title="Activity ring" id="eQu-mV-049"/>
                         <button width="1" alignment="left" title="Timer" id="6IX-5D-J5U"/>
+                        <button width="1" alignment="left" title="Picker" id="tCN-rR-aFz">
+                            <connections>
+                                <segue destination="xbB-CR-5Ji" kind="push" id="GBl-5j-JMA"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
