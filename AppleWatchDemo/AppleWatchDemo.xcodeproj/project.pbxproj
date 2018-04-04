@@ -20,6 +20,8 @@
 		C863F89C2074BB0400CCAD47 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863F89B2074BB0400CCAD47 /* ExtensionDelegate.swift */; };
 		C863F89E2074BB0400CCAD47 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863F89D2074BB0400CCAD47 /* NotificationController.swift */; };
 		C863F8A02074BB0400CCAD47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C863F89F2074BB0400CCAD47 /* Assets.xcassets */; };
+		C863F8B12074DFFE00CCAD47 /* ActivityRingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863F8B02074DFFE00CCAD47 /* ActivityRingInterfaceController.swift */; };
+		C863F8B32074E39C00CCAD47 /* MenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C863F8B22074E39C00CCAD47 /* MenuInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		C863F89F2074BB0400CCAD47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C863F8A12074BB0400CCAD47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C863F8A22074BB0400CCAD47 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C863F8B02074DFFE00CCAD47 /* ActivityRingInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingInterfaceController.swift; sourceTree = "<group>"; };
+		C863F8B22074E39C00CCAD47 /* MenuInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				C863F89F2074BB0400CCAD47 /* Assets.xcassets */,
 				C863F8A12074BB0400CCAD47 /* Info.plist */,
 				C863F8A22074BB0400CCAD47 /* PushNotificationPayload.apns */,
+				C863F8B02074DFFE00CCAD47 /* ActivityRingInterfaceController.swift */,
+				C863F8B22074E39C00CCAD47 /* MenuInterfaceController.swift */,
 			);
 			path = "AppleWatchDemo WatchKit Extension";
 			sourceTree = "<group>";
@@ -302,7 +308,9 @@
 			files = (
 				C863F89E2074BB0400CCAD47 /* NotificationController.swift in Sources */,
 				C863F89C2074BB0400CCAD47 /* ExtensionDelegate.swift in Sources */,
+				C863F8B12074DFFE00CCAD47 /* ActivityRingInterfaceController.swift in Sources */,
 				C863F89A2074BB0400CCAD47 /* InterfaceController.swift in Sources */,
+				C863F8B32074E39C00CCAD47 /* MenuInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
