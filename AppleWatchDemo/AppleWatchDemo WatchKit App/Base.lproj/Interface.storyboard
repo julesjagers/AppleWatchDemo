@@ -25,7 +25,11 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchDemo_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Menu" id="SfF-2q-CsV"/>
+                        <button width="1" alignment="left" title="Menu" id="SfF-2q-CsV">
+                            <connections>
+                                <segue destination="06x-Zk-e7l" kind="push" id="oHy-QH-dI5"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="Activity ring" id="eQu-mV-049"/>
                         <button width="1" alignment="left" title="Timer" id="6IX-5D-J5U"/>
                         <button width="1" alignment="left" title="Picker" id="tCN-rR-aFz">
@@ -60,6 +64,22 @@
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AppleWatchDemo_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="VTA-i0-xHY">
+            <objects>
+                <controller id="06x-Zk-e7l">
+                    <menu key="menu" id="KSz-oR-v0l">
+                        <items>
+                            <menuItem title="Play" icon="play" id="MwJ-FS-B9g"/>
+                            <menuItem title="Pause" icon="pause" id="gZl-nO-OZW"/>
+                            <menuItem title="Resume" icon="resume" id="cYW-1i-ApO"/>
+                            <menuItem title="Repeat" icon="repeat" id="rWS-pW-o2N"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="753" y="372"/>
         </scene>
     </scenes>
 </document>
