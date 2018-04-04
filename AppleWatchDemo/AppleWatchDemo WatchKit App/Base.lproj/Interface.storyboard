@@ -9,16 +9,54 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Picker Interface Controller-->
         <scene sceneID="l9A-yG-uJU">
             <objects>
-                <controller id="xbB-CR-5Ji">
+                <controller id="xbB-CR-5Ji" customClass="PickerInterfaceController" customModule="AppleWatchDemo_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Hallo clown :D" id="NgO-U7-epv"/>
+                        <picker height="132" alignment="left" id="R1p-bO-wfB">
+                            <connections>
+                                <action selector="pickerAction:" destination="xbB-CR-5Ji" id="6NN-qU-Mpf"/>
+                            </connections>
+                        </picker>
+                        <label width="1" alignment="center" verticalAlignment="bottom" text=" " textAlignment="center" id="GFc-DN-UlG">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
                     </items>
+                    <connections>
+                        <outlet property="picker" destination="R1p-bO-wfB" id="rwv-ZZ-HvH"/>
+                        <outlet property="selectedpickerItemLabel" destination="GFc-DN-UlG" id="vCC-TB-XKg"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="218" y="-13"/>
+            <point key="canvasLocation" x="218" y="-10.5"/>
+        </scene>
+        <!--Timer Interface Controller-->
+        <scene sceneID="5bs-e9-o6E">
+            <objects>
+                <controller id="296-eC-7xi" customClass="TimerInterfaceController" customModule="AppleWatchDemo_WatchKit_Extension">
+                    <items>
+                        <timer width="1" alignment="center" textAlignment="center" id="ADf-rC-Q33">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="EIE-eG-0wL">
+                                    <connections>
+                                        <action selector="touchedTimer:" destination="296-eC-7xi" id="Utq-Ph-yDJ"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </timer>
+                        <separator alignment="left" id="Isa-gM-cq5"/>
+                        <timer width="1" alignment="left" textAlignment="center" previewedSeconds="40864569" id="zjh-ZK-AU5">
+                            <calendarUnit key="units" year="YES" month="YES" day="YES" weekOfMonth="YES"/>
+                        </timer>
+                    </items>
+                    <connections>
+                        <outlet property="timer" destination="ADf-rC-Q33" id="bpR-fX-QRF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="513" y="48"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
@@ -27,7 +65,11 @@
                     <items>
                         <button width="1" alignment="left" title="Menu" id="SfF-2q-CsV"/>
                         <button width="1" alignment="left" title="Activity ring" id="eQu-mV-049"/>
-                        <button width="1" alignment="left" title="Timer" id="6IX-5D-J5U"/>
+                        <button width="1" alignment="left" title="Timer" id="6IX-5D-J5U">
+                            <connections>
+                                <segue destination="296-eC-7xi" kind="push" id="W9w-cq-o5t"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="Picker" id="tCN-rR-aFz">
                             <connections>
                                 <segue destination="xbB-CR-5Ji" kind="push" id="GBl-5j-JMA"/>
