@@ -15,10 +15,10 @@
                 <controller id="Sdu-07-ask">
                     <menu key="menu" id="ytC-mq-gpw">
                         <items>
-                            <menuItem title="Menu Item" icon="play" id="whe-RR-PtA"/>
-                            <menuItem title="Menu Item" icon="pause" id="jVS-ym-6Ir"/>
-                            <menuItem title="Menu Item" icon="repeat" id="uzy-aS-5pp"/>
-                            <menuItem title="Menu Item" icon="resume" id="ldf-fn-ViH"/>
+                            <menuItem title="Play" icon="play" id="whe-RR-PtA"/>
+                            <menuItem title="Pause" icon="pause" id="jVS-ym-6Ir"/>
+                            <menuItem title="Repeat" icon="repeat" id="uzy-aS-5pp"/>
+                            <menuItem title="Resume" icon="resume" id="ldf-fn-ViH"/>
                         </items>
                     </menu>
                 </controller>
