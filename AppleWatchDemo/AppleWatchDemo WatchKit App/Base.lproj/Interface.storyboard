@@ -30,11 +30,7 @@
                                 <segue destination="06x-Zk-e7l" kind="push" id="oHy-QH-dI5"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Activity ring" id="eQu-mV-049">
-                            <connections>
-                                <segue destination="ZiP-Wv-POp" kind="push" id="s5P-B6-bAR"/>
-                            </connections>
-                        </button>
+                        <button width="1" alignment="left" title="Activity ring" id="eQu-mV-049"/>
                         <button width="1" alignment="left" title="Timer" id="6IX-5D-J5U"/>
                         <button width="1" alignment="left" title="Picker" id="tCN-rR-aFz">
                             <connections>
@@ -84,20 +80,6 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="753" y="372"/>
-        </scene>
-        <!--Activity Ring Interface Controller-->
-        <scene sceneID="Nrf-mM-zOL">
-            <objects>
-                <controller id="ZiP-Wv-POp" customClass="ActivityRingInterfaceController" customModule="AppleWatchDemo_WatchKit_Extension">
-                    <items>
-                        <activity alignment="left" id="Vug-en-N3R"/>
-                    </items>
-                    <connections>
-                        <outlet property="activityRing" destination="Vug-en-N3R" id="Uho-h2-joO"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="501" y="-61"/>
         </scene>
     </scenes>
 </document>
